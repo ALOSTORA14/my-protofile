@@ -64,7 +64,7 @@ body{
 }
 .btn:hover{
     background: white;
-    color: #0077cc;
+    color: #061622;
 }
 .glass{
     margin: 40px auto;
@@ -83,6 +83,9 @@ footer{
 }
 a{
     text-decoration: none;
+    color:#000027 ;
+    font-style: italic;
+    font-weight: bold;
 }
 @media (max-width:768px) {
     .overlay{ padding: 20px;}
@@ -98,4 +101,7 @@ ul {
 }
 .address{
     text-align: center;
+}
+.hidden{
+    display: none;;
 }
