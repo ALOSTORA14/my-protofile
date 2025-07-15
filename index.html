@@ -32,12 +32,12 @@
     </footer>
     <script>
         document.getElementById("show-about").addEventListener("click", function(event) {
-        event.preventDefault(); // عشان ما ينقلش الصفحة لفوق
+        event.preventDefault(); 
         var aboutSection = document.getElementById("about");
         var contactSection = document.getElementById("contact");
         aboutSection.classList.remove("hidden");
         contactSection.classList.remove("hidden")
-        this.style.display = "none"; // نخفي الزر بعد ما نضغط
+        this.style.display = "none"; 
         }
     );
 </script>
