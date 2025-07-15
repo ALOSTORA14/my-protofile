@@ -12,14 +12,14 @@
             <img src="3.png" alt="" width="90%" height="500" >
             <h1 class="typewriter">Welcome you, I'm Ahmed.</h1>
             <p>Wep developer under training | lover of innovation</p>
-            <a href="#about" class="btn"> Know more about me!</a>
+            <a href="#about" class="btn" id="show-about"> Know more about me!</a>
         </div>
     </div>
-    <section id="about" class="glass">
+    <section id="about" class="glass hidden">
         <h2 class="address">Who i'm?</h2>
         <p>I am a hardworking student who loves programming and design. I am currently learning HTML and CSS and this is my first creative project! </p>
     </section>
-    <section id="contact" class="glass">
+    <section id="contact" class="glass hidden">
         <h2 class="address">Contact with me</h2>
         <ul>
             <li>📧 <a href="mailto: ahmedhmam255@gmail.com">ahmedhmam255@gmail.com</a></li>
@@ -30,5 +30,18 @@
     <footer>
         <p>💡Design and programming: © Ahmed Hamam 2025</p>
     </footer>
+    <script>
+        document.getElementById("show-about").addEventListener("click", function(event) {
+        event.preventDefault(); // عشان ما ينقلش الصفحة لفوق
+        var aboutSection = document.getElementById("about");
+        var contactSection = document.getElementById("contact");
+        aboutSection.classList.remove("hidden");
+        contactSection.classList.remove("hidden")
+        this.style.display = "none"; // نخفي الزر بعد ما نضغط
+        }
+    );
+</script>
+
 </body>
+
 </html>
