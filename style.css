@@ -81,15 +81,15 @@ footer{
     background: #00000044;
     color: #fff;
 }
+a{
+    text-decoration: none;
+}
 @media (max-width:768px) {
     .overlay{ padding: 20px;}
     .typewriter{font-size: 1.5 em;}
     .avatar{width: 100px; height: 100px;}
     .glass{margin: 20px 10px;}
     .btn{padding: 8px 16px; font-size: 14px;}
-}
-a{
-      text-decoration: none;
 }
 ul {
     list-style-type: none;
