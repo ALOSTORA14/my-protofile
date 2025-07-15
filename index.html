@@ -20,7 +20,7 @@
         <p>I am a hardworking student who loves programming and design. I am currently learning HTML and CSS and this is my first creative project! </p>
     </section>
     <section id="contact" class="glass hidden fade">
-        <h2 class="address">Contact with me</h2>
+        <h2 class="address">Contact with me</h2> <b> </b>
         <ul>
             <li>📧 <a href="mailto: ahmedhmam255@gmail.com">ahmedhmam255@gmail.com</a></li>
             <li>🔗 <a href="https://www.linkedin.com/in/ahmed-hamam-266528189">Linkidin</a> | <a href="https://github.com/ALOSTORA14">Github</a></li>
@@ -30,35 +30,6 @@
     <footer>
         <p>💡Design and programming: © Ahmed Hamam 2025</p>
     </footer>
-    <script>
-        const toggleBtn = document.getElementById("toggle-about");
-        const sections = [document.getElementById("about"),document.getElementById("contact")];
-        let isShown = false;
-
-        toggleBtn.addEventListener("click", function (e) {
-            e.preventDefault;
-            isShown = !isShown;
-
-            if(isShown){
-                sections.forEach((section,index)=>{
-                    setTimeout(()=>{
-                        section.classList.remove("hidden");
-                        section.classList.add("show");
-                    }, index*500);
-                });
-                toggleBtn.textContent= "Hide Information";
-            }else{
-                sections.forEach((section)=>{
-                    section.classList.remove("show");
-                    setTimeout(()=>{
-                        section.classList.add("hidden");
-                    },400);
-                });
-                toggleBtn.textContent="Know more about me";
-            }
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
